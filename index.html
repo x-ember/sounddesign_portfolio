@@ -87,19 +87,22 @@
         构建基于地面材质与空间距离的交互音频系统，实现脚步与环境音的动态变化。
     </p>
     <p>
-        System Design：
+        System Implementation：
     </p>
     <p>
-        · Switch → 控制地面材质（脚步变化）
+        · Switch Group → 动态物理材质反馈：配置四种地面材质（Wood, Grass, Water, Stone），每种包含 5 个随机采样变体，有效消除听觉疲劳。
     </p>
     <p>
-        · RTPC（Distance）→ 控制环境音渐变（Ambience）
+        · RTPC（Distance）→ 空间边界预警：建立基于玩家与区域边界距离的实时参数映射，通过 Pitch 实时偏移 提供空间位置的非线性听觉反馈。
+    </p>
+    <p>
+        Spatial Ambience → 差异化声学环境：根据区域材质同步切换环境底噪（Bed），利用金属回响与间歇水声强化不同地貌的声学指纹。
     </p>
     <p>
         Design Goal：
     </p>
     <p>
-        · 提升玩家对空间位置与材质变化的感知
+        · 通过音频反馈强化玩家对物理边界的感知，利用音高变化提供直观的位置导航提示，提升交互的功能性。
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -109,7 +112,7 @@
         <span class="tag">Ambience</span>
     </p>
     <p>
-    <a href="https://www.alipan.com/s/THmP7TzjTke" target="_blank">▶ 观看Demo</a>
+    <a href="https://www.alipan.com/s/YAxHQNf1gQb" target="_blank">▶ 观看Demo</a>
     &nbsp;·&nbsp;
     <a href="https://www.alipan.com/s/Gk8RhNHmVr6" target="_blank">▶ 观看Demo（含Wwise Profiler: Silent, for voice scheduling info only）</a>
     &nbsp;·&nbsp;
@@ -146,6 +149,22 @@
 </p>
 </div>
 
+<div class="project">
+    <h2>04 · 原创游戏音乐片段（战斗Loop / 叙事钢琴）</h2>
+    <p class="description">
+        探索节奏驱动的战斗循环与情绪导向的叙事音乐。
+    </p>
+    <p>
+        <span class="tag">Reaper</span>
+        <span class="tag">GarageBand</span>
+    </p>
+    <p>
+    <a href="1%20复古风激战游戏Beat.wav" target="_blank">▶ Combat Loop</a>
+    &nbsp;·&nbsp;
+    <a href="2%怀旧回忆风钢琴片段.wav" target="_blank">▶ Narrative Piano</a>
+</p>
+</div>
+    
 <hr style="border-color:#333; margin: 40px 0;">
 
 <p style="color:#666; font-size:13px;">
