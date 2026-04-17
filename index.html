@@ -42,26 +42,51 @@
 <hr style="border-color:#333; margin: 40px 0;">
 
 <div class="project">
-    <h2>01 · 《古墓丽影》Sound Redesign</h2>
+    <h2>01 · HP驱动的动态战斗音频系统（Wwise × Unity）</h2>
     <p class="description">
-        基于原片段独立完成全部音效重设计，涵盖枪械四层分层架构（瞬态、体感、气流、机械层）、脚步地面切换、火花与环境音、UI拾取音效合成。
+        基于HP与伤害参数构建实时驱动的战斗音频系统，实现命中反馈与音乐情绪的动态响应。
+    <p>
+        System Design：
+        RTPC（HP）→ 控制音乐强度分层（Vertical Layering）
+        RTPC（Damage）→ 驱动命中反馈层级（Blend Container）
+        State（Combat / Silence）→ 控制战斗与静默切换
     </p>
     <p>
-        <span class="tag">Ableton Live</span>
-        <span class="tag">Sound Design</span>
-        <span class="tag">Layering</span>
+        Design Goal：
+        强化玩家对战斗强度与危险状态的感知
+        实现玩法变化与音频情绪同步
     </p>
     <p>
-    <a href="https://www.alipan.com/s/h2UW6berLzF" target="_blank">▶ 观看Demo</a>
+        <span class="tag">Wwise</span>
+        <span class="tag">Unity</span>
+        <span class="tag">State</span>
+        <span class="tag">RTPC</span>
+        <span class="tag">Interactive Music</span>
+    </p>
+    <p>
+    <a href="https://www.alipan.com/s/gZeSGNEAfEi" target="_blank">▶ 观看Demo（Dual-track with Victory sequence）</a>
     &nbsp;·&nbsp;
-    <a href="Tomb%20Raider%20Demo%20Source%20List.pdf" target="_blank">素材来源</a>
+    <a href="https://www.alipan.com/s/2NJc2a1zLoa" target="_blank">▶ 观看Demo（Defeat sequence）</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.alipan.com/s/WoRqGrNFht5" target="_blank">▶ 观看Demo（Victory sequence）</a>
+    &nbsp;·&nbsp;
+    <a href="Combat_Demo%20Source%20List.pdf" target="_blank">素材来源</a>
 </p>
 </div>
 
 <div class="project">
-    <h2>02 · Wwise-Unity 交互音频Demo</h2>
+    <h2>02 · 基于RTPC的环境与脚步交互音频系统（Wwise × Unity）</h2>
     <p class="description">
-        独立搭建完整交互音频系统，包含四种地面材质的Switch切换系统、对应Ambience环境音、基于边界距离的RTPC音高变化，以及随机化变体避免机械重复。
+        构建基于地面材质与空间距离的交互音频系统，实现脚步与环境音的动态变化。
+    </p>
+    <p>
+        System Design：
+        Switch → 控制地面材质（脚步变化）
+        RTPC（Distance）→ 控制环境音渐变（Ambience）
+    </p>
+    <p>
+        Design Goal：
+        提升玩家对空间位置与材质变化的感知
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -80,25 +105,25 @@
 </div>
 
 <div class="project">
-    <h2>03 · 《冰与铁》战斗系统交互音频</h2>
+    <h2>03 · 动作场景音效重设计（Sound Redesign）</h2>
     <p class="description">
-        独立设计战斗音效系统与垂直分层背景乐；音效层包含Blend Container双层混合架构，基于RTPC实时映射角色血量驱动broken层渐入与High Pass滤波；音乐层实现三轨垂直混合，drone与lead层随血量阈值动态触发，基于State切换实现双结局音乐收尾逻辑。
+        重构动作场景音效层级与空间响应，强化节奏与沉浸感。
     </p>
     <p>
-        <span class="tag">Wwise</span>
-        <span class="tag">Unity</span>
-        <span class="tag">State</span>
-        <span class="tag">RTPC</span>
-        <span class="tag">Interactive Music</span>
+        Design Focus：
+        枪声层级（冲击 / 尾音）
+        空间混响（室内 / 外部）
+        动作节奏匹配
     </p>
     <p>
-    <a href="https://www.alipan.com/s/gZeSGNEAfEi" target="_blank">▶ 观看Demo（Dual-track with Victory sequence）</a>
+        <span class="tag">Ableton Live</span>
+        <span class="tag">Sound Design</span>
+        <span class="tag">Layering</span>
+    </p>
+    <p>
+    <a href="https://www.alipan.com/s/h2UW6berLzF" target="_blank">▶ 观看Demo</a>
     &nbsp;·&nbsp;
-    <a href="https://www.alipan.com/s/2NJc2a1zLoa" target="_blank">▶ 观看Demo（Defeat sequence）</a>
-    &nbsp;·&nbsp;
-    <a href="https://www.alipan.com/s/WoRqGrNFht5" target="_blank">▶ 观看Demo（Victory sequence）</a>
-    &nbsp;·&nbsp;
-    <a href="Combat_Demo%20Source%20List.pdf" target="_blank">素材来源</a>
+    <a href="Tomb%20Raider%20Demo%20Source%20List.pdf" target="_blank">素材来源</a>
 </p>
 </div>
 
