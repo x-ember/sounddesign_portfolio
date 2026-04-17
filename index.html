@@ -46,25 +46,22 @@
     <p class="description">
         基于HP与伤害参数构建实时驱动的战斗音频系统，实现命中反馈与音乐情绪的动态响应。
     <p>
-        System Design：
+        System Implementation：
     </p>
     <p>
-        RTPC（HP）→ 控制音乐强度分层（Vertical Layering）
+        · RTPC (HP) → 垂直分层音乐 (Vertical Layering)：随血量阈值实时激活 Drone 与 Lead 旋律层。
     </p>
     <p>
-        RTPC（Damage）→ 驱动命中反馈层级（Blend Container）
+        · RTPC (Damage) → 多阶命中反馈 (Blend Container)：实现从 Normal 到 Broken 的物理质感演变。
     </p>
     <p>
-        State（Combat / Silence）→ 控制战斗与静默切换
+        · State (Game Outcome) → 动态混音切换：基于胜负状态触发全局静默与结局转场。
     </p>
     <p>
         Design Goal：
     </p>
     <p>
-        强化玩家对战斗强度与危险状态的感知
-    </p>
-    <p>
-        实现玩法变化与音频情绪同步
+        · 建立音频与数值的强耦合，强化玩家对战斗强度及危险状态的实时反馈感知。
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -74,7 +71,7 @@
         <span class="tag">Interactive Music</span>
     </p>
     <p>
-    <a href="https://www.alipan.com/s/gZeSGNEAfEi" target="_blank">▶ 观看Demo（Dual-track with Victory sequence）</a>
+    <a href="https://www.alipan.com/s/FPDKysT8uSD" target="_blank">▶ 观看Demo（Dual-track with Victory sequence）</a>
     &nbsp;·&nbsp;
     <a href="https://www.alipan.com/s/2NJc2a1zLoa" target="_blank">▶ 观看Demo（Defeat sequence）</a>
     &nbsp;·&nbsp;
@@ -93,16 +90,16 @@
         System Design：
     </p>
     <p>
-        Switch → 控制地面材质（脚步变化）
+        · Switch → 控制地面材质（脚步变化）
     </p>
     <p>
-        RTPC（Distance）→ 控制环境音渐变（Ambience）
+        · RTPC（Distance）→ 控制环境音渐变（Ambience）
     </p>
     <p>
         Design Goal：
     </p>
     <p>
-        提升玩家对空间位置与材质变化的感知
+        · 提升玩家对空间位置与材质变化的感知
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -129,13 +126,13 @@
         Design Focus：
     </p>
     <p>
-        枪声层级（冲击 / 尾音）
+        · 枪声层级（冲击 / 尾音）
     </p>
     <p>
-        空间混响（室内 / 外部）
+        · 空间混响（室内 / 外部）
     </p>
     <p>
-        动作节奏匹配
+        · 动作节奏匹配
     </p>
     <p>
         <span class="tag">Ableton Live</span>
