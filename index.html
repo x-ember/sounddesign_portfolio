@@ -47,13 +47,23 @@
         基于HP与伤害参数构建实时驱动的战斗音频系统，实现命中反馈与音乐情绪的动态响应。
     <p>
         System Design：
+    </p>
+    <p>
         RTPC（HP）→ 控制音乐强度分层（Vertical Layering）
+    </p>
+    <p>
         RTPC（Damage）→ 驱动命中反馈层级（Blend Container）
+    </p>
+    <p>
         State（Combat / Silence）→ 控制战斗与静默切换
     </p>
     <p>
         Design Goal：
+    </p>
+    <p>
         强化玩家对战斗强度与危险状态的感知
+    </p>
+    <p>
         实现玩法变化与音频情绪同步
     </p>
     <p>
@@ -81,11 +91,17 @@
     </p>
     <p>
         System Design：
+    </p>
+    <p>
         Switch → 控制地面材质（脚步变化）
+    </p>
+    <p>
         RTPC（Distance）→ 控制环境音渐变（Ambience）
     </p>
     <p>
         Design Goal：
+    </p>
+    <p>
         提升玩家对空间位置与材质变化的感知
     </p>
     <p>
@@ -111,8 +127,14 @@
     </p>
     <p>
         Design Focus：
+    </p>
+    <p>
         枪声层级（冲击 / 尾音）
+    </p>
+    <p>
         空间混响（室内 / 外部）
+    </p>
+    <p>
         动作节奏匹配
     </p>
     <p>
