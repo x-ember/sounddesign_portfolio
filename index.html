@@ -44,16 +44,16 @@
 <div class="project">
     <h2>01 · 《冰与铁》HP驱动的动态战斗音频系统（Wwise × Unity）</h2>
     <p class="description">
-        基于HP与伤害参数构建实时驱动的战斗音频系统，实现命中反馈与音乐情绪的动态响应。
+        基于HP与伤害参数构建 RTPC 驱动的战斗音频系统，实现命中反馈与音乐情绪的动态演变。
     </p>
     <p class="description">
         <strong>System Implementation：</strong>
     </p>
     <p class="description">
-        · RTPC (HP) → 垂直分层音乐 (Vertical Layering)与侧链避让思维：随血量阈值激活分层 Drone 与 Lead，并实现两者间的动态避让。
+        · RTPC (HP) → 垂直分层音乐 (Vertical Layering)与侧链避让思维（Wwise Meter）：随血量阈值激活分层 Drone 与 Lead，并实现两者间的动态避让。
     </p>
     <p class="description">
-        · RTPC (Damage) → 多阶命中反馈 (Blend Container)：实现命中声音从 Normal 到 Broken 的物理质感演变。
+        · RTPC (Damage) → 多阶命中反馈 (Blend Container)：实现命中声音从 Normal 到 Broken、Final Blow 的物理质感演变。
     </p>
     <p class="description">
         · State (Game State) → 全局状态切换：基于胜负状态触发全局静默。
@@ -62,7 +62,7 @@
         <strong>Design Goal：</strong>
     </p>
     <p class="description">
-        · 建立音频与数值的强耦合，强化玩家对战斗强度及对峙状态的实时反馈感知。
+        · 建立音频与数值的强耦合，强化玩家对战斗强度及对峙状态的感知。
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -85,16 +85,16 @@
 <div class="project">
     <h2>02 · 基于RTPC的环境与脚步交互音频系统（Wwise × Unity）</h2>
     <p class="description">
-        构建基于地面材质与空间距离的交互音频系统，实现脚步与环境音的动态变化。
+        构建基于地面材质与空间距离的交互音频系统，实现脚步声与环境音的动态变化。
     </p>
     <p class="description">
         <strong>System Implementation：</strong>
     </p>
     <p class="description">
-        · Switch Group → 动态物理材质反馈：配置四种地面材质（Wood, Grass, Water, Stone），每种包含 5 个随机采样变体，消除重复感。
+        · Switch Group → 物理材质反馈：配置四种地面材质（Wood, Grass, Water, Stone），每种包含 5 个随机采样变体，消除重复感。
     </p>
     <p class="description">
-        · RTPC（Distance）→ 空间边界预警：建立基于玩家与区域边界距离的实时参数映射，通过 Pitch 实时偏移提供空间位置的线性听觉反馈。
+        · RTPC（Distance）→ 空间边界预警：建立基于玩家与区域边界距离的实时参数映射，通过脚步声 Pitch 的线性实时偏移，提供直观的距离变化听觉反馈。
     </p>
     <p class="description">
         Spatial Ambience → 差异化声学环境：根据区域材质同步切换环境底噪（Bed），利用鸟鸣、风声、地矿回响、水声强化不同地貌的声学指纹。
@@ -103,7 +103,7 @@
         <strong>Design Goal：</strong>
     </p>
     <p class="description">
-        · 通过音频反馈强化玩家对物理边界的感知，利用音高变化提供直观感性的距离提示，提升交互的功能性。
+        · 通过音频反馈强化玩家对空间、物理边界的感知，利用音高变化提供直观感性的距离提示，提升交互的功能性。
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -136,10 +136,10 @@
         <strong>Design Focus：</strong>
     </p>
     <p class="description">
-        · 混合合成材质： 将 Operator / Wavetable / Vital / Surge XT 自制合成与预置元素相融合，构建统一的、结晶感强烈的冰雪魔法特征以及具有冲击力的技能效果。
+        · 混合合成材质： 将 Operator / Wavetable / Vital / Surge XT 自制合成与预置相融合，构建质感统一的、结晶感强烈的冰雪攻击特征以及具有冲击力的技能效果。
     </p>
     <p class="description">
-        · 空间与动态平衡： 利用Glue Compressor、Saturator、Reverb 粘合不同的元素层，同时提升子编组饱和度，使在提升目标整体响度的同时，不掩蔽高频细节。
+        · 空间与动态平衡： 利用Glue Compressor、Saturator、Reverb 粘合不同的元素层，同时提升子编组饱和度，实现在提升目标整体响度的同时，不掩蔽高频细节。
     </p>
     <p>
         <span class="tag">Ableton Live</span>
