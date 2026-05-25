@@ -53,10 +53,10 @@
         · RTPC (HP) → 垂直分层音乐 (Vertical Layering)与侧链避让思维（Wwise Meter）：随血量阈值激活分层 Drone 与 Lead，并实现两者间的动态避让。
     </p>
     <p class="description">
-        · RTPC (Damage) → 多阶命中反馈 (Blend Container)：实现命中声音从 Normal 到 Broken、Final Blow 的物理质感演变。
+        · RTPC (Damage) → 多阶命中反馈 (Blend Container)：实现命中声音从 Normal 到 Broken、Final Blow 的质感演变。
     </p>
     <p class="description">
-        · State (Game State) → 全局状态切换：基于胜负状态触发全局静默。
+        · State (Game State) → 全局状态切换：基于胜负分晓状态触发全局静默。
     </p>
     <p class="description">
         <strong>Design Goal：</strong>
@@ -97,13 +97,13 @@
         · RTPC（Distance）→ 空间边界预警：建立基于玩家与区域边界距离的实时参数映射，通过脚步声 Pitch 的线性实时偏移，提供直观的距离变化听觉反馈。
     </p>
     <p class="description">
-        Spatial Ambience → 差异化声学环境：根据区域材质同步切换环境底噪（Bed），利用鸟鸣、风声、地矿回响、水声强化不同地貌的声学指纹。
+        Spatial Ambience → 差异化声学环境：根据区域材质同步切换环境底噪（Bed），利用鸟鸣、风声、地矿回响、水声强化不同区域的声学指纹。
     </p>
     <p class="description">
         <strong>Design Goal：</strong>
     </p>
     <p class="description">
-        · 通过音频反馈强化玩家对空间、物理边界的感知，利用音高变化提供直观感性的距离提示，提升交互的功能性。
+        · 通过音频反馈强化玩家对空间、物理边界的感知，利用脚步声音高变化提供直观感性的距离提示，提升交互的功能性。
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -124,7 +124,7 @@
 <div class="project">
     <h2>03 · 混合合成《鸣潮》绯雪技能音效重设计（Hybrid Synthesis Showcase）</h2>
     <p class="description">
-        本 Demo 为全板内 (In-The-Box) 声音重设计。部分核心元素（Whoosh / Ice Crack / Pulse Wave / Burst / Eject等）通过 Ableton Live 内置工具及外部合成器自制调制生成，部分辅以预设进行材质与超低音铺垫。重点展示了如何利用多参数自动化 (Automation)与滤波扫频 (Filter Sweep)，来塑造冰系魔法在蓄力、弹射以及爆发阶段的声压感与物理冲击力。
+        本 Demo 为全板内 (In-The-Box) 声音重设计。部分核心元素（Whoosh / Ice Crack / Pulse Wave / Burst / Eject等）通过 Ableton Live 内置工具及外部合成器自制调制生成，部分辅以预设进行材质与超低音铺垫。重点展示了如何利用多参数自动化 (Automation)与滤波扫频 (Filter Sweep)，来塑造冰系技能在蓄力、弹射以及爆发阶段的声压感与物理冲击力。
     </p>
     <p class="description">
         <strong>素材来源：</strong> 视频画面源自 IGN 官方演示片段。
@@ -139,7 +139,7 @@
         · 混合合成材质： 将 Operator / Wavetable / Vital / Surge XT 自制合成与预置相融合，构建质感统一的、结晶感强烈的冰雪攻击特征以及具有冲击力的技能效果。
     </p>
     <p class="description">
-        · 空间与动态平衡： 利用Glue Compressor、Saturator、Reverb 粘合不同的元素层，同时提升子编组饱和度，实现在提升目标整体响度的同时，不掩蔽高频细节。
+        · 空间与动态平衡： 利用Glue Compressor、Saturator、Reverb 粘合不同的元素层，统一空间感，同时提升子编组饱和度，实现在提升目标整体响度的同时，不掩蔽高频细节。
     </p>
     <p>
         <span class="tag">Ableton Live</span>
