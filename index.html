@@ -50,7 +50,7 @@
         <strong>System Implementation：</strong>
     </p>
     <p class="description">
-        · RTPC (HP) → 垂直分层音乐 (Vertical Layering)与侧链避让思维（Wwise Meter）：随血量阈值激活分层 Drone 与 Lead，并实现两者间的动态避让。
+        · RTPC (HP) → 垂直分层音乐 (Vertical Layering)与侧链避让思维（Wwise Meter）：随血量阈值激活音乐分层 Drone 与 Lead，并实现两者间的动态避让。
     </p>
     <p class="description">
         · RTPC (Damage) → 多阶命中反馈 (Blend Container)：实现命中声音从 Normal 到 Broken、Final Blow 的质感演变。
@@ -62,7 +62,7 @@
         <strong>Design Goal：</strong>
     </p>
     <p class="description">
-        · 建立音频与数值的强耦合，强化玩家对战斗强度及对峙状态的感知。
+        · 建立音频与数值的强耦合，强化玩家对战斗强度及对峙状态（危险或胜利在望）的感知。
     </p>
     <p>
         <span class="tag">Wwise</span>
@@ -91,7 +91,7 @@
         <strong>System Implementation：</strong>
     </p>
     <p class="description">
-        · Switch Group → 物理材质反馈：配置四种地面材质（Wood, Grass, Water, Stone），每种包含 5 个随机采样变体，消除重复感。
+        · Switch Group → 物理材质反馈：配置四种地面材质（Wood, Grass, Water, Stone），每种包含 5 个随机变体，消除重复感。
     </p>
     <p class="description">
         · RTPC（Distance）→ 空间边界预警：建立基于玩家与区域边界距离的实时参数映射，通过脚步声 Pitch 的线性实时偏移，提供直观的距离变化听觉反馈。
@@ -130,7 +130,7 @@
         <strong>素材来源：</strong> 视频画面源自 IGN 官方演示片段。
     </p>
     <p class="description">
-        <strong>制作工具：</strong> Ableton Live (Built-in Devices) / Vital / Surge XT / OB-Xd
+        <strong>制作工具：</strong> Ableton Live (Built-in Devices) / Vital / Surge XT / OB-Xd.
     </p>
     <p class="description">
         <strong>Design Focus：</strong>
@@ -163,13 +163,13 @@
         <strong>Design Focus：</strong>
     </p>
     <p class="description">
-        · 材质一致性：通过共享金属基底与谐音层，确保不同动作间音色的连贯；通过共享混响层统一空间感
+        · 材质一致性：通过共享金属基底与谐音层，确保不同动作间音色的连贯；通过共享混响层统一空间感。
     </p>
     <p class="description">
-        · 受击反馈层次：通过多层素材叠加，构建重金属兵器撞击的多样打击感
+        · 受击反馈层次：通过多层素材叠加，构建重金属兵器撞击的多样打击感。
     </p>
     <p class="description">
-        · 动态与动能模拟：利用自动化控制与包络修剪，模拟战斧挥动时的动能变化与速度感
+        · 动态与动能模拟：利用自动化控制与包络修剪，模拟战斧挥动时的动能变化与速度感。
     </p>
     <p>
         <span class="tag">Ableton Live</span>
@@ -186,20 +186,22 @@
 <div class="project">
     <h2>05 · 动作场景音效重设计（Sound Redesign）</h2>
     <p class="description">
-        重构动作场景音效层级与空间响应，强化沉浸感与叙事感。
+        重构动作场景音效层级与空间响应，强化叙事感与沉浸感。
     </p>
     <p class="description">
         <strong>Design Focus：</strong>
     </p>
     <p class="description">
-        · 枪声层级：按高、中、低频表现分为四层 —— Transient、Body（两层）、Tail， 叠加素材；主要通过变换 Transient 层制作变体
+        · 枪声层级：按高、中、低频表现分为四层 —— Transient、Body（两层）、Tail， 叠加素材；主要通过变换 Transient 层制作变体。
     </p>
     <p class="description">
-        · 空间混响：山洞内与外部混响变化，以及在这个过程中的风声变化
+        · 空间混响：山洞内与外部混响变化，以及在这个过程中的风声变化。
     </p>
     <p class="description">
-        · 脚步声层级：中性脚步声叠加多种材质接触声（Grass、Dirt、Stone、Wood等）与衣服摩擦声，配以多种变体
+        · 脚步声层级：中性脚步声叠加多种材质接触声（Grass、Dirt、Stone、Wood等）与衣服摩擦声，配以多种变体。
     </p>
+    <p class="description">
+        · 场景氛围：主要通过强调金属感和爆发冲击力的枪声、闷响的火声与火星喷溅、变换的风声与山洞内外不同的混响状态，营造危险阴冷的复仇基调。
     <p>
         <span class="tag">Ableton Live</span>
         <span class="tag">Sound Design</span>
