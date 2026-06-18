@@ -7,6 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800&family=Archivo+Expanded:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+.lang-switch{position:absolute; top:32px; right:28px; font-family:var(--mono); font-size:12px}
+.lang-switch a{color:var(--dim); text-decoration:none; padding:6px 10px; border:1px solid var(--line); border-radius:6px}
+.lang-switch a:hover{color:var(--signal); border-color:var(--signal)}
 <style>
   :root{
     --bg:#0c0c0e; --panel:#15151a; --panel-2:#1b1b21;
@@ -40,7 +43,7 @@
   .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--signal); display:flex; align-items:center; gap:10px}
   .eyebrow::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--signal); box-shadow:0 0 12px var(--signal); animation:blink 2.4s ease-in-out infinite}
   @keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
-  h1{font-family:var(--disp); font-weight:800; font-size:clamp(40px,7vw,76px); line-height:.98; letter-spacing:-.01em; margin:18px 0 6px}
+  h1{font-family:var(--disp); font-weight:800; font-size:clamp(20px,3.5vw,38px); line-height:.98; letter-spacing:-.01em; margin:18px 0 6px}
   h1 .en{color:var(--muted); font-weight:700}
   .role{font-size:17px; color:var(--muted); max-width:46ch}
   .toolbar{display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; align-items:center}
@@ -134,9 +137,9 @@
 </style>
 </head>
 <body>
-
-<div class="wrap">
+<div class="wrap" style="position:relative">
   <header>
+    <div class="lang-switch"><a href="index_en.html">English</a></div>
     <div class="eyebrow">Game Audio · Sound Design · Interactive Implementation</div>
     <h1><span class="en">Ember</span></h1>
     <p class="role">游戏音效设计师 · 音乐学背景 · 专注声音与交互实现</p>
